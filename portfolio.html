@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		
+		.protfolio-container{
+			display: flex;
+			flex-direction: column;
+			padding: 20px;
+		}
+
+		/* Profile section*/
+
+		.profile-section{
+			display: flex;
+			align-items: center;
+			margin-bottom: 30px;
+		}
+		.bio{
+
+			margin-left: 20px;
+
+		}
+		.bio h2 {
+			font-size: 24px;
+			margin-bottom: 10px;
+
+		}
+
+		/* Skill section*/
+
+		.skill-section{
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+			margin-bottom: 30px;
+
+		}
+
+		.skill{
+			background-color: #3498db;
+			color: white;
+			padding: 10px 15px;
+			border-radius: 5px;
+		}
+
+
+		.skill{
+			transition-property: background-color, transform;
+		}
+
+		/* projects section*/
+
+		.projects-section{
+			display:flex;
+			flex-wrap: wrap;
+			gap: 20px;
+
+		}
+
+
+
+		.project-card {
+
+			flex-basis: 30%;
+			background-color: #f4f4f4;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 1.0);
+
+		}
+
+
+		 
+
+		 @media (max-width:800px){
+		 	.projects-section{
+		 		flex-direction: column;
+
+		 	}
+
+		 	.project-card{
+		 		flex-basis: 100%;
+
+		 	}
+		 }
+
+		 
+
+		@media (max-width:600px) {
+
+			h1 {
+
+				font-size: 1.5rem;
+
+			}
+		}
+		 @media (max-width:900px) {
+
+		 	h1{
+		 		font-size: 3rem;
+		 	}
+		 }
+
+		 @media (max-width:600px) {
+		 	.products-section{
+
+		 		grid-template-columns: 1fr;
+
+
+		 	}
+		 }
+		 @media (max-width:900px) {
+		 	.products-section{
+		 		grid-template-columns:repeat(4, 1fr);
+
+		 	}
+		 }
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+	</style>
+
+</head>
+<body>
+	<div class="protfolio-container">
+		<--profile section-->
+			<div class="profile-section">
+				<h1>Wellcome</h1>
+			<img src="ajay.jpg" alt="NOt available"
+              width="150px"/>
+              <div class="bio">
+              	<h2>Ajay kumar</h2>
+              	<p>web developer with a passion for creating beatiful and responsive websites. </p>
+              	
+   </div>
+	</div>
+
+	<--skill Section-->
+		<div class="skill-section">
+			<div class="skill">HTML</div>
+			<div class="skill">CSS</div>
+			<div class="skill">JavaScript</div>
+			<div class="skill">C++</div>
+			<div class="skill">React</div>
+
+		</div>
+
+
+
+		<--project Section-->
+			<div class="projects-section">
+				<div class="project-card">
+					<h3>Project 1</h3>
+
+					<p>A responsive e-commerce website </p>
+					
+					</div>
+	<div class="project-card">
+		<h3>Project 2</h3>
+
+		<p>A social media app built with React.</p>
+		
+	</div>
+	<div class="project-card">
+		<h3> project 3</h3>
+
+		<p>A protfolio site with responsive design.</p>
+
+
+
+	</div>
+
+	<div class="project-card">
+		<h3>project 4</h3>
+		<p>A protfolio site with responsive design.</p>
+		
+
+	</div>
+
+			</div>
+
+</body>
+</html>
